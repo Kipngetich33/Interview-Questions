@@ -1,6 +1,6 @@
 
 ## 1.What is Python ?
-#### Python is a general purpose high level programing language that was built in such a way as to allow better code readability and a simpler syntax that allows programmers to express ideas in fewer lines of code.
+###### Python is a general purpose high level programing language that was built in such a way as to allow better code readability and a simpler syntax that allows programmers to express ideas in fewer lines of code.
 
 ## 2.In what areas can we use python programing language?
 * Web Development 
@@ -20,7 +20,7 @@
 
 * python script - a file than can execute withou
 
-* package - this is a collection python modules with the __init__ .py module within it making it possible to easily import contents of that folder outside the folder.
+* package - this is a collection python modules with the __init__ .py module within it making it possible to easily import and uses the moduels outiside the package
 
 ## 5.What is the difference in using Python 2+ and Python 3+?
 
