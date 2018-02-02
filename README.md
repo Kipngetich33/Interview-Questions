@@ -57,7 +57,9 @@ Python built in modules refers to all the modules found in the python standard l
 Flask is a micro- web framework that is built using python, flask uses Jinja for templating and also the Werkzeug toolkit 
 
 ## 14. How does flask differ from other frameworks?
-
+* Flask is less oppionionated, it gives the developer the bare minimum and allows them to choose on more add ons
+* For that reason flask is more flexible as compared to other frameworks like django
+* It does not have an obvious way of doing things, it is therefore better for the purposes of learing things every twist becomes a new learning expirience
 
 ## 15. What comes built in in flask?
 * Jinja 
@@ -67,7 +69,7 @@ Flask is a micro- web framework that is built using python, flask uses Jinja for
 Is an isolated environment that allows the developers to install libraries and dependacies when building an app without affecting global software and libraries
 
 ## 17. What is a template?
-
+IS a flask file structured using HTML,CSS, Bootstrap etc. that has placeholders that displays the actual data on the site
 
 ## 18. What is a view function?
 Is a fuction that returns a html template and data relating to that page
@@ -94,7 +96,6 @@ A blueprint is a divisional structure more or less the same as the app but unlik
 
 ## 26.How can you connect a blueprint to an application factory?
 By registering the blueprint in the application factory
-
 
 ## 27. What is a migration file?
 is a files that stores the changes in the database format as dictated by the modified module classes 
@@ -133,12 +134,13 @@ These are section of templates that hold specific contents of that page some exa
 Templates are re-used in jinja by simply extending the template in another template
 
 ## 40. What are variable filters ?
+Filters are special built-in methods or user defined functions in flask that gives an out of the box functionality for manipulating data.The tojson() filter in flask for example allows the user to easily convert data into json file by just using {{data | tojson}}
 
 ## 41. How are static files stored in a flask application ?
 static files are stored within the static folder and accessed with the help of the url for
 
 ## 42. How is authentication managed in a flask application ?
-It is managed with the help of flask-login extension
+It is managed with the help of flask-login extensions that has an out of the box functionality that allows for the creation of users as well as management of login sessions
 
 ## 43. What are database sessions ?
 These are temporary context created upon request by and app or user to facilitate the interaction with the database. It therefore allows for the safe CRUD application on database objects
@@ -156,8 +158,13 @@ It is a column in one table that is used to refence another table in the databas
 SQL implements a relational database model while Nosql implements a  none relational database model.
 
 ## 48. What is the difference between a GET and POST request?
+GET requests are basically used to retrive data from specified sources they are however less secure and their use should therefore be used carefully, POST on the other hand is used to update or create new resources in a target resource
 
 ## 49. What is CSRF and why do we need to protect our applications from it?
+CSFR is the abbreviation for Cross Site Request Forgery and is s type of attack that exploits the trust that a site has on a users browser.
+CSRF attacks can be prevented through two main ways:
+1. Unsure that your application uses a CSRF key
+2. Minimize on GET methods and instead use POST
 
 ## 50. What is a status code and what do the various status codes mean?
 These are shortcodes for http requests that define the state of the current request. Some of the status codes are as follows:
@@ -165,7 +172,19 @@ These are shortcodes for http requests that define the state of the current requ
 200 - request processed successul
 501 - internal server error
 
-* 200's status codes indicate 
+#### 100's
+This are informational codes often telling the user that the request has been recieved and is awaiting processing
+
+#### 200' 
+These are codes that tells the user that the request was recieved and accepted
+
+### 300's 
+
+### 400's 
+
+### 500's 
+
+
 * 300' 
 * 400's codes represent errors
 * 500's codes rep
